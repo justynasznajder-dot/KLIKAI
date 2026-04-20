@@ -11,12 +11,12 @@
 }
 
 .eyebrow {
-  font-size: 11px;
+  font-size: 14px;
   color: var(--green);
   text-transform: uppercase;
   letter-spacing: 0.14em;
   font-weight: 700;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .title {

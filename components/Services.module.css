@@ -9,12 +9,12 @@
 }
 
 .eyebrow {
-  font-size: 11px;
+  font-size: 14px;
   color: var(--green);
   text-transform: uppercase;
   letter-spacing: 0.14em;
   font-weight: 700;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .title {
@@ -34,8 +34,14 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
+}
+
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .card {

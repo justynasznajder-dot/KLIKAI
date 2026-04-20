@@ -3,7 +3,7 @@ import styles from './Pricing.module.css'
 const packages = [
   {
     name: 'START',
-    price: 'od 2 500 zł',
+    price: 'od 1 500 zł',
     desc: 'Szybki start w internecie - profesjonalna strona bez zbędnych kosztów',
     features: [
       'strona główna + 2-3 podstrony',
@@ -60,7 +60,6 @@ export default function Pricing() {
   return (
     <section className={styles.section} id="cennik">
       <div className={styles.eyebrow}>Cennik</div>
-      <h2 className={styles.title}>Cennik</h2>
       <p className={styles.lead}>
         Ceny mają charakter poglądowy i zależą od zakresu projektu. Umów się na darmowe spotkanie,
         a przygotujemy rekomendację i dokładną wycenę dopasowaną do Twojego biznesu.
