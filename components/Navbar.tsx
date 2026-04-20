@@ -10,6 +10,7 @@ export default function Navbar() {
         <a href="#uslugi">Oferta</a>
         <a href="#cennik">Cennik</a>
         <a href="#realizacje">Realizacje</a>
+        <a href="#dane-kontaktowe">Dane kontaktowe</a>
         <a href="#kontakt" className={styles.cta}>Umów się</a>
       </div>
     </nav>

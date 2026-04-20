@@ -53,21 +53,6 @@
   margin-bottom: 14px;
 }
 
-.cta {
-  display: inline-block;
-  background: var(--green);
-  color: var(--navy);
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 14px;
-  padding: 11px 18px;
-  border-radius: 4px;
-}
-
-.cta:hover {
-  background: var(--green-mid);
-}
-
 @media (max-width: 700px) {
   .list {
     grid-template-columns: 1fr;

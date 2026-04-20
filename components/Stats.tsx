@@ -20,9 +20,6 @@ export default function Stats() {
         ))}
       </ul>
       <p className={styles.end}>Umów się na rozmowę, mamy na to sprawdzone sposoby.</p>
-      <a href="#kontakt" className={styles.cta}>
-        Umów rozmowę o Twoim procesie
-      </a>
     </section>
   )
 }

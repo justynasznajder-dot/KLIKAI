@@ -3,7 +3,8 @@
   padding: 22px 40px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  gap: 22px;
 }
 
 .logo {
@@ -21,6 +22,21 @@
 .copy {
   font-size: 11px;
   color: var(--green-border);
+}
+
+.contact {
+  color: var(--green-border);
+  font-size: 12px;
+  line-height: 1.55;
+  max-width: 360px;
+}
+
+.contactTitle {
+  color: var(--green-light);
+  font-family: 'Syne', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 6px;
 }
 
 .right {
@@ -46,11 +62,12 @@
     padding: 20px;
     flex-direction: column;
     gap: 16px;
-    text-align: center;
+    text-align: left;
   }
   .right {
-    align-items: center;
-    flex-direction: row;
-    gap: 16px;
+    align-items: flex-start;
+  }
+  .contact {
+    max-width: none;
   }
 }
