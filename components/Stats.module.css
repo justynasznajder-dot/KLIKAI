@@ -1,0 +1,35 @@
+.bar {
+  display: flex;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+}
+
+.stat {
+  flex: 1;
+  padding: 20px 12px;
+  text-align: center;
+  border-right: 1px solid var(--border);
+}
+
+.stat:last-child {
+  border-right: none;
+}
+
+.num {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  color: var(--navy);
+}
+
+.num span {
+  color: var(--green);
+}
+
+.label {
+  font-size: 10px;
+  color: #8fa3b5;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 4px;
+}

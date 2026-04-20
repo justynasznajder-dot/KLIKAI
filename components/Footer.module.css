@@ -1,0 +1,56 @@
+.footer {
+  background: var(--navy);
+  padding: 22px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.logo span {
+  color: var(--green);
+}
+
+.copy {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.28);
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.right a {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.35);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.right a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 20px;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+  .right {
+    align-items: center;
+    flex-direction: row;
+    gap: 16px;
+  }
+}
