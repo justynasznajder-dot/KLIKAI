@@ -19,7 +19,7 @@ export default function Stats() {
           </li>
         ))}
       </ul>
-      <p className={styles.end}>To właśnie rozwiązujemy.</p>
+      <p className={styles.end}>Umów się na rozmowę, mamy na to sprawdzone sposoby.</p>
     </section>
   )
 }

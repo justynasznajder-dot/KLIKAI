@@ -37,6 +37,18 @@ const harryItems = [
   'Aplikacja mobilna (w trakcie realizacji) - dostęp do materiałów oraz możliwość wykonywania powtórek po lekcjach na urządzeniach mobilnych',
 ]
 
+const sportQuestHighlights = [
+  'Panel trenerski do obsługi grup, harmonogramów i obecności.',
+  'System XP i monet zwiększający motywację dzieci do regularnych zajęć.',
+  'Panel rodzica z podglądem postępów, punktów i rozliczeń.',
+]
+
+const harryHighlights = [
+  'Zapisy online z automatycznym przydziałem do grup i harmonogramu.',
+  'Panel szkoły do zarządzania kursami, lektorami i płatnościami.',
+  'Panel kursanta i rodzica z dostępem do zajęć, informacji i statusów.',
+]
+
 export default function UseCases() {
   return (
     <section className={styles.section} id="realizacje">
@@ -44,16 +56,37 @@ export default function UseCases() {
       <h2 className={styles.title}>Przykładowe realizacje</h2>
       <div className={styles.grid}>
         <div className={styles.card}>
-          <div className={styles.cardTitle}>SportQuest - System gamifikacji dla szkół pływania</div>
-          <div className={styles.cardDesc}>
-            Aplikacja webowa łącząca zarządzanie szkołą pływania z systemem motywacji dla dzieci opartym na mechanizmach gry.
+          <div className={styles.cardHead}>
+            <div className={styles.cardMain}>
+              <div className={styles.cardTitle}>SportQuest - System gamifikacji dla szkół pływania</div>
+              <div className={styles.cardDesc}>
+                Aplikacja webowa łącząca zarządzanie szkołą pływania z systemem motywacji dla dzieci opartym na mechanizmach gry.
+              </div>
+              <ul className={styles.highlights}>
+                {sportQuestHighlights.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+              <div className={styles.result}>
+                <strong>Efekt:</strong> większe zaangażowanie dzieci, lepsza frekwencja i mniej pracy administracyjnej.
+              </div>
+            </div>
+            <div className={styles.previewWrap}>
+              <a href="https://sport-quest.vercel.app/" target="_blank" rel="noreferrer" className={styles.previewLink}>
+                <img
+                  src="/images/projects/SportQuest.png"
+                  alt="Podgląd strony SportQuest"
+                  className={styles.previewImage}
+                />
+              </a>
+              <a href="https://sport-quest.vercel.app/" target="_blank" rel="noreferrer" className={styles.siteLink}>
+                Zobacz stronę
+              </a>
+            </div>
           </div>
-          <a href="https://sport-quest.vercel.app/" target="_blank" rel="noreferrer" className={styles.siteLink}>
-            Zobacz stronę
-          </a>
           <details className={styles.details}>
             <summary className={styles.more}>
-              <span className={styles.moreLabel}>Więcej -&gt;</span>
+              <span className={styles.moreLabel}>Zobacz zakres wdrożenia -&gt;</span>
               <span className={styles.lessLabel}>Mniej -&gt;</span>
             </summary>
             <div className={styles.group}>
@@ -83,16 +116,37 @@ export default function UseCases() {
           </details>
         </div>
         <div className={styles.card}>
-          <div className={styles.cardTitle}>Harry English - platforma dla szkoły językowej</div>
-          <div className={styles.cardDesc}>
-            Nowoczesna strona internetowa połączona z systemem do zarządzania szkołą i obsługi kursantów.
+          <div className={styles.cardHead}>
+            <div className={styles.cardMain}>
+              <div className={styles.cardTitle}>Harry English - platforma dla szkoły językowej</div>
+              <div className={styles.cardDesc}>
+                Nowoczesna strona internetowa połączona z systemem do zarządzania szkołą i obsługi kursantów.
+              </div>
+              <ul className={styles.highlights}>
+                {harryHighlights.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+              <div className={styles.result}>
+                <strong>Efekt:</strong> mniej ręcznej pracy, uporządkowana administracja i lepsze doświadczenie kursantów.
+              </div>
+            </div>
+            <div className={styles.previewWrap}>
+              <a href="https://www.harry-english.pl/" target="_blank" rel="noreferrer" className={styles.previewLink}>
+                <img
+                  src="/images/projects/HarryEnglish.png"
+                  alt="Podgląd strony Harry English"
+                  className={styles.previewImage}
+                />
+              </a>
+              <a href="https://www.harry-english.pl/" target="_blank" rel="noreferrer" className={styles.siteLink}>
+                Zobacz stronę
+              </a>
+            </div>
           </div>
-          <a href="https://www.harry-english.pl/" target="_blank" rel="noreferrer" className={styles.siteLink}>
-            Zobacz stronę
-          </a>
           <details className={styles.details}>
             <summary className={styles.more}>
-              <span className={styles.moreLabel}>Więcej -&gt;</span>
+              <span className={styles.moreLabel}>Zobacz zakres wdrożenia -&gt;</span>
               <span className={styles.lessLabel}>Mniej -&gt;</span>
             </summary>
             <div className={styles.group}>

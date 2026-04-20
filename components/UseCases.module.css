@@ -36,6 +36,18 @@
   color: var(--text-body);
 }
 
+.cardHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.cardMain {
+  flex: 1;
+  min-width: 0;
+}
+
 .cardTitle {
   color: var(--navy);
   font-family: 'Syne', sans-serif;
@@ -61,6 +73,84 @@
   margin-bottom: 14px;
 }
 
+.highlights {
+  list-style: none;
+  display: grid;
+  gap: 6px;
+  margin-bottom: 14px;
+  color: var(--text-body);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.highlights li::before {
+  content: '• ';
+  color: var(--green);
+  font-weight: 700;
+}
+
+.result {
+  color: var(--text-body);
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
+
+.result strong {
+  color: var(--navy);
+}
+
+.thumb {
+  width: 164px;
+  min-width: 164px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 10px;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.thumbIcon {
+  width: 28px;
+  height: 28px;
+}
+
+.thumbText {
+  color: var(--text-muted);
+  font-size: 11px;
+  line-height: 1.35;
+  text-align: center;
+  word-break: break-word;
+}
+
+.previewWrap {
+  width: 230px;
+  min-width: 230px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.previewLink {
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.previewImage {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  display: block;
+}
+
 .siteLink {
   display: inline-block;
   font-size: 13px;
@@ -76,6 +166,7 @@
 
 .details {
   display: inline-block;
+  margin-top: 10px;
 }
 
 .more {
@@ -86,6 +177,18 @@
   font-weight: 600;
   list-style: none;
   display: inline-block;
+}
+
+.lessLabel {
+  display: none;
+}
+
+.details[open] .moreLabel {
+  display: none;
+}
+
+.details[open] .lessLabel {
+  display: inline;
 }
 
 .more::-webkit-details-marker {
@@ -129,5 +232,18 @@
   }
   .section {
     padding: 40px 20px;
+  }
+  .cardHead {
+    flex-direction: column;
+  }
+  .thumb {
+    width: 100%;
+    min-width: 0;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .previewWrap {
+    width: 100%;
+    min-width: 0;
   }
 }
