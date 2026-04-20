@@ -24,7 +24,11 @@ export default function Hero() {
           Zobacz ofertę
         </a>
       </div>
-      <p className={styles.trust}>Strony • Systemy • Automatyzacje • AI</p>
+      <div className={styles.trustList}>
+        <span className={styles.trustItem}>Wycena i plan działania do 24h</span>
+        <span className={styles.trustItem}>Wdrożenie etapami bez blokowania biznesu</span>
+        <span className={styles.trustItem}>Jasna komunikacja i stałe wsparcie po starcie</span>
+      </div>
     </section>
   )
 }

@@ -1,0 +1,211 @@
+.section {
+  padding: 44px 40px;
+  background: #fff;
+  border-top: 1px solid var(--border-sec);
+}
+
+.eyebrow {
+  font-size: 11px;
+  color: var(--green);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.title {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  color: var(--navy);
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.lead {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.65;
+  max-width: 900px;
+  margin-bottom: 18px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.card {
+  background: var(--green-card);
+  border: 1px solid var(--green-mid);
+  border-radius: 6px;
+  padding: 16px 15px;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(15, 25, 35, 0.04);
+}
+
+.featured {
+  border: 2px solid var(--green);
+  box-shadow: 0 12px 26px rgba(56, 189, 248, 0.16);
+}
+
+.badge {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  background: var(--green);
+  color: var(--navy);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 9px;
+  border-radius: 999px;
+}
+
+.cardTitle {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 19px;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+
+.price {
+  font-size: 21px;
+  font-weight: 800;
+  color: var(--green);
+  margin-bottom: 8px;
+}
+
+.cardDesc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.points {
+  list-style: none;
+  display: grid;
+  gap: 5px;
+  color: var(--text-body);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.points li::before {
+  content: '• ';
+  color: var(--green);
+  font-weight: 700;
+}
+
+.maintenance {
+  margin-top: 8px;
+  border: 1px solid var(--green-mid);
+  border-radius: 6px;
+  padding: 16px 15px;
+  background: #fff;
+}
+
+.maintenanceTitle {
+  font-family: 'Syne', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.maintenanceDesc {
+  font-size: 14px;
+  color: var(--text-body);
+  line-height: 1.65;
+  margin-bottom: 10px;
+}
+
+.maintenancePrice {
+  color: var(--green);
+  font-weight: 800;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.notes {
+  margin-top: 10px;
+  border-top: 1px dashed var(--green-mid);
+  padding-top: 9px;
+  display: grid;
+  gap: 4px;
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.disclaimer {
+  margin-top: 10px;
+  color: var(--text-body);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.ctaBox {
+  margin-top: 12px;
+  background: var(--green-light);
+  border: 1px solid var(--green-mid);
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.ctaTitle {
+  font-family: 'Syne', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+
+.ctaText {
+  color: var(--text-body);
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.ctaButton {
+  display: inline-block;
+  background: var(--green);
+  color: var(--navy);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 9px 16px;
+  border-radius: 6px;
+}
+
+.ctaButton:hover {
+  background: var(--green-mid);
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .section {
+    padding: 40px 20px;
+  }
+  .title {
+    font-size: 26px;
+  }
+  .lead {
+    font-size: 14px;
+  }
+  .cardTitle {
+    font-size: 18px;
+  }
+  .price {
+    font-size: 20px;
+  }
+  .maintenanceTitle,
+  .ctaTitle {
+    font-size: 19px;
+  }
+}

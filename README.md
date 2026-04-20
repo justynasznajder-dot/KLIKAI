@@ -67,3 +67,21 @@ vercel
 | Granat      | `#1a2940` |
 | Zieleń      | `#5ab535` |
 | Tło zielone | `#f2f8ee` |
+
+## Kontekst i snapshoty
+
+- `kontekst/` - dokumenty opisujące aktualny stan projektu i ustalenia do dalszej pracy z AI.
+- `snapshoty/` - checkpointy konkretnych etapów (co bylo wdrożone i jak wrócić do stanu).
+
+Przyklad:
+- `kontekst/AI_CONTEXT.md`
+- `snapshoty/SNAPSHOT_2026-04-20_HOMEPAGE.md`
+
+## Jak przywrócić snapshot (workflow)
+
+1. Otwórz wybrany plik z folderu `snapshoty/` i sprawdź listę plików kluczowych.
+2. Wprowadź rollback tylko dla tych plików (z historii IDE, gita albo ręcznie).
+3. Upewnij się, że assety (np. obrazy w `public/images/projects/`) nadal istnieją.
+4. Uruchom lokalnie:
+   - `npm run dev`
+5. Zweryfikuj sekcje i anchor links (`#uslugi`, `#realizacje`, `#kontakt`).

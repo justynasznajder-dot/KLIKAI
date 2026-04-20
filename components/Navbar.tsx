@@ -8,6 +8,7 @@ export default function Navbar() {
       </div>
       <div className={styles.right}>
         <a href="#uslugi">Oferta</a>
+        <a href="#cennik">Cennik</a>
         <a href="#realizacje">Realizacje</a>
         <a href="#kontakt" className={styles.cta}>Umów się</a>
       </div>

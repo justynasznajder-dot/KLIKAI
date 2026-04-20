@@ -54,6 +54,7 @@ export default function Services() {
         <h2 className={styles.title}>Usługi, które realnie wspierają sprzedaż i operacje</h2>
         <p className={styles.sub}>Projektujemy i wdrażamy rozwiązania od pierwszej strony po skalowalne aplikacje.</p>
       </div>
+
       <div className={styles.grid}>
         {services.map((s) => (
           <div key={s.title} className={styles.card}>

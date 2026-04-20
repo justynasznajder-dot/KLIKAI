@@ -8,6 +8,12 @@ export default function About() {
     'bezpieczeństwo i backupy',
     'rozwój i utrzymanie',
   ]
+  const process = [
+    'jeden opiekun projektu i jasny plan działań',
+    'regularne podsumowania postępu prac',
+    'etapowe wdrożenia bez zatrzymywania firmy',
+    'stałe wsparcie techniczne po starcie',
+  ]
 
   return (
     <section className={styles.section} id="o-nas">
@@ -31,9 +37,9 @@ export default function About() {
         </div>
         <div className={styles.visual}>
           <div className={styles.placeholder}>
-            <div className={styles.sideTitle}>W pakiecie otrzymujesz</div>
+            <div className={styles.sideTitle}>Jak to prowadzimy</div>
             <ul className={styles.sideList}>
-              {items.map((item) => (
+              {process.map((item) => (
                 <li key={`side-${item}`}>{item}</li>
               ))}
             </ul>
