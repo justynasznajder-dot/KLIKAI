@@ -52,6 +52,15 @@ vercel
 2. Wejdź na vercel.com → New Project
 3. Zaimportuj repo → Deploy
 
+## Google Analytics 4 (GA4)
+
+1. Skopiuj `.env.example` do `.env.local`.
+2. Uzupełnij identyfikator GA4:
+   - `NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX`
+3. Uruchom ponownie dev server (`npm run dev`).
+
+Integracja jest dodana globalnie w `app/layout.tsx` i ładuje się tylko wtedy, gdy `NEXT_PUBLIC_GA_ID` jest ustawione.
+
 ## Co warto dodać przed deployem
 
 - [ ] Zdjęcie zespołu → `/public/team.jpg` (podmień placeholder w `About.tsx`)
