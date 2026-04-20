@@ -26,6 +26,13 @@
   line-height: 1.7;
 }
 
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
 .btn {
   display: inline-block;
   background: var(--green);
@@ -41,6 +48,22 @@
 
 .btn:hover {
   background: var(--green-mid);
+}
+
+.btnOutline {
+  display: inline-block;
+  border: 1px solid var(--green-mid);
+  color: var(--navy);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 14px 32px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.btnOutline:hover {
+  background: #fff;
 }
 
 .sub {

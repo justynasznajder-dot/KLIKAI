@@ -1,22 +1,25 @@
 import styles from './Stats.module.css'
 
-const stats = [
-  { num: '24', suffix: '/7', label: 'Działanie' },
-  { num: '100', suffix: '%', label: 'RODO' },
-  { num: '3', suffix: 'x', label: 'Więcej leadów' },
+const problems = [
+  'masz stronę, ale nie przynosi klientów',
+  'robisz dużo rzeczy ręcznie (maile, excel, chaos)',
+  'tracisz czas na powtarzalne zadania',
+  'brakuje Ci systemu do zarządzania',
 ]
 
 export default function Stats() {
   return (
-    <div className={styles.bar}>
-      {stats.map((s) => (
-        <div key={s.label} className={styles.stat}>
-          <div className={styles.num}>
-            {s.num}<span>{s.suffix}</span>
-          </div>
-          <div className={styles.label}>{s.label}</div>
-        </div>
-      ))}
-    </div>
+    <section className={styles.section}>
+      <div className={styles.eyebrow}>Problem</div>
+      <h2 className={styles.title}>Czy Twoja strona naprawdę pracuje dla Ciebie?</h2>
+      <ul className={styles.list}>
+        {problems.map((item) => (
+          <li key={item} className={styles.item}>
+            {item}
+          </li>
+        ))}
+      </ul>
+      <p className={styles.end}>To właśnie rozwiązujemy.</p>
+    </section>
   )
 }

@@ -37,7 +37,22 @@
   font-size: 14px;
   color: var(--green-border);
   line-height: 1.75;
+  margin-bottom: 14px;
+}
+
+.list {
+  list-style: none;
+  display: grid;
+  gap: 7px;
   margin-bottom: 24px;
+  color: var(--green-light);
+  font-size: 13px;
+}
+
+.list li::before {
+  content: '• ';
+  color: var(--green);
+  font-weight: 700;
 }
 
 .btn {
@@ -72,8 +87,32 @@
 .placeholder {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
+  width: 100%;
+  padding: 24px;
+}
+
+.sideTitle {
+  color: var(--navy);
+  font-family: 'Syne', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.sideList {
+  list-style: none;
+  display: grid;
+  gap: 8px;
+  color: var(--text-body);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.sideList li::before {
+  content: '• ';
+  color: var(--green);
+  font-weight: 700;
 }
 
 .placeholderText {

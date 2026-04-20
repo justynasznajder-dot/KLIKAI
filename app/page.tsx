@@ -5,6 +5,7 @@ import Services from '@/components/Services'
 import Steps from '@/components/Steps'
 import Benefits from '@/components/Benefits'
 import About from '@/components/About'
+import UseCases from '@/components/UseCases'
 import CTA from '@/components/CTA'
 import Footer from '@/components/Footer'
 
@@ -16,9 +17,10 @@ export default function Home() {
         <Hero />
         <Stats />
         <Services />
-        <Steps />
         <Benefits />
         <About />
+        <Steps />
+        <UseCases />
         <CTA />
       </main>
       <Footer />

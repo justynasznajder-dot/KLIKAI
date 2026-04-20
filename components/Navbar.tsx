@@ -7,9 +7,8 @@ export default function Navbar() {
         KLIK<span>.AI</span>
       </div>
       <div className={styles.right}>
-        <a href="#uslugi">Automatyzacje</a>
-        <a href="#uslugi">Strony</a>
-        <a href="#uslugi">Systemy</a>
+        <a href="#uslugi">Oferta</a>
+        <a href="#realizacje">Realizacje</a>
         <a href="#kontakt" className={styles.cta}>Umów się</a>
       </div>
     </nav>

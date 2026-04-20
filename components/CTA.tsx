@@ -4,18 +4,20 @@ export default function CTA() {
   return (
     <section className={styles.section} id="kontakt">
       <h2 className={styles.title}>
-        Gotowy na <em>automatyzację</em>?
+        Masz pomysł? <em>Zróbmy z niego działający system.</em>
       </h2>
       <p className={styles.desc}>
-        Umów bezpłatną rozmowę i sprawdź,<br />
-        co możemy zautomatyzować w Twojej firmie.
+        Powiedz nam co chcesz osiągnąć - zaproponujemy najlepsze rozwiązanie.
       </p>
-      <a href="mailto:kontakt@klikai.com.pl" className={styles.btn}>
-        Umów się teraz
-      </a>
-      <p className={styles.sub}>
-        Bezpłatna konsultacja · Bez zobowiązań · Odpowiadamy w 24h
-      </p>
+      <div className={styles.btns}>
+        <a href="mailto:kontakt@klikai.com.pl" className={styles.btn}>
+          Skontaktuj się
+        </a>
+        <a href="#kontakt" className={styles.btnOutline}>
+          Umów rozmowę
+        </a>
+      </div>
+      <p className={styles.sub}>Szybka odpowiedź · Konkretna propozycja · Realny plan działania</p>
     </section>
   )
 }

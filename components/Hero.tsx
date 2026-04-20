@@ -5,28 +5,26 @@ export default function Hero() {
     <section className={styles.hero}>
       <div className={styles.eyebrow}>
         <span className={styles.line} />
-        Automatyzacja &amp; AI dla firm
+        Strony • Systemy • Automatyzacje • AI
       </div>
       <h1 className={styles.h1}>
-        Inteligentne systemy,<br />
-        które <em>ułatwiają</em><br />
-        życie Twojej firmy
+        Zamieniamy strony w narzędzia,<br />
+        które <em>zarabiają</em> i oszczędzają<br />
+        Twój czas
       </h1>
       <p className={styles.value}>
-        Więcej klientów. Mniej pracy ręcznej. Od zaraz.
-      </p>
-      <p className={styles.desc}>
-        Łączymy nowoczesne strony z automatyzacjami AI — tworząc systemy,
-        które pozyskują klientów i oszczędzają czas.
+        Tworzymy strony, systemy i automatyzacje AI, które realnie wspierają Twój biznes
+        - od prostych stron po zaawansowane aplikacje z panelem i integracjami.
       </p>
       <div className={styles.btns}>
         <a href="#kontakt" className={styles.btnGreen}>
-          Umów bezpłatną rozmowę
+          Umów rozmowę
         </a>
         <a href="#uslugi" className={styles.btnOutline}>
-          Zobacz usługi →
+          Zobacz ofertę
         </a>
       </div>
+      <p className={styles.trust}>Strony • Systemy • Automatyzacje • AI</p>
     </section>
   )
 }
