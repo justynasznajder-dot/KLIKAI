@@ -3,9 +3,9 @@ import styles from './Navbar.module.css'
 export default function Navbar() {
   return (
     <nav className={styles.nav}>
-      <div className={styles.logo}>
+      <a href="#" className={styles.logo}>
         KLIK<span>.AI</span>
-      </div>
+      </a>
       <div className={styles.right}>
         <a href="#uslugi">Oferta</a>
         <a href="#cennik">Cennik</a>
