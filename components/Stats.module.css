@@ -28,7 +28,7 @@
 
 .label {
   font-size: 10px;
-  color: #8fa3b5;
+  color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-top: 4px;

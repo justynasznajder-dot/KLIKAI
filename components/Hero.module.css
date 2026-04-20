@@ -1,12 +1,12 @@
 .hero {
-  background: var(--green-light);
+  background: var(--navy);
   padding: 56px 40px 52px;
   border-bottom: 1px solid var(--green-border);
 }
 
 .eyebrow {
   font-size: 11px;
-  color: #3d7a22;
+  color: var(--green);
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -29,7 +29,7 @@
   font-weight: 800;
   font-size: clamp(32px, 5vw, 52px);
   line-height: 1.1;
-  color: var(--navy);
+  color: var(--green-light);
   margin-bottom: 14px;
   letter-spacing: -0.8px;
 }
@@ -41,13 +41,13 @@
 
 .value {
   font-size: 16px;
-  color: var(--navy);
+  color: var(--green-light);
   font-weight: 500;
   margin-bottom: 12px;
 }
 
 .desc {
-  color: var(--text-body);
+  color: var(--green-border);
   font-size: 15px;
   line-height: 1.75;
   margin-bottom: 32px;
@@ -63,7 +63,7 @@
 
 .btnGreen {
   background: var(--green);
-  color: #fff;
+  color: var(--navy);
   font-family: 'DM Sans', sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -74,24 +74,26 @@
 }
 
 .btnGreen:hover {
-  background: #4ea02d;
+  background: var(--green-mid);
 }
 
 .btnOutline {
-  background: #fff;
-  color: var(--navy);
+  background: transparent;
+  color: var(--green-light);
   font-family: 'DM Sans', sans-serif;
   font-size: 14px;
   font-weight: 500;
   padding: 13px 22px;
   border-radius: 4px;
-  border: 1.5px solid #b0c4b0;
+  border: 1.5px solid var(--green-mid);
   text-decoration: none;
-  transition: border-color 0.15s;
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
 }
 
 .btnOutline:hover {
-  border-color: var(--green);
+  border-color: var(--green-light);
+  background: var(--green-light);
+  color: var(--navy);
 }
 
 @media (max-width: 600px) {

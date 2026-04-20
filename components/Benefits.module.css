@@ -29,8 +29,8 @@
 }
 
 .card {
-  background: #fff;
-  border: 1px solid #dce5ee;
+  background: var(--green-card);
+  border: 1px solid var(--green-mid);
   border-radius: 4px;
   padding: 18px 16px;
   display: flex;

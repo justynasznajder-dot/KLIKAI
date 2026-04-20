@@ -23,7 +23,7 @@
   font-family: 'Syne', sans-serif;
   font-weight: 800;
   font-size: 26px;
-  color: #fff;
+  color: var(--green-light);
   margin-bottom: 14px;
   line-height: 1.25;
 }
@@ -35,7 +35,7 @@
 
 .desc {
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--green-border);
   line-height: 1.75;
   margin-bottom: 24px;
 }
@@ -43,7 +43,7 @@
 .btn {
   display: inline-block;
   background: var(--green);
-  color: #fff;
+  color: var(--navy);
   font-family: 'DM Sans', sans-serif;
   font-size: 13px;
   font-weight: 700;
@@ -54,12 +54,12 @@
 }
 
 .btn:hover {
-  background: #4ea02d;
+  background: var(--green-mid);
 }
 
 .visual {
-  background: rgba(90, 181, 53, 0.07);
-  border: 1px solid rgba(90, 181, 53, 0.2);
+  background: var(--green-light);
+  border: 1px solid var(--green-mid);
   border-radius: 4px;
   min-height: 200px;
   display: flex;
@@ -78,7 +78,7 @@
 
 .placeholderText {
   font-size: 11px;
-  color: rgba(255, 255, 255, 0.25);
+  color: var(--text-muted);
   letter-spacing: 0.05em;
 }
 

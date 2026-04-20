@@ -1,5 +1,5 @@
 .nav {
-  background: #fff;
+  background: var(--navy);
   padding: 14px 24px;
   display: flex;
   align-items: center;
@@ -15,7 +15,7 @@
   font-weight: 800;
   font-size: 22px;
   letter-spacing: -0.5px;
-  color: var(--navy);
+  color: var(--green-light);
   text-decoration: none;
 }
 
@@ -31,7 +31,7 @@
 
 .right a {
   font-size: 11px;
-  color: #6b8099;
+  color: var(--green-border);
   text-decoration: none;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -40,19 +40,19 @@
 }
 
 .right a:hover {
-  color: var(--navy);
+  color: var(--green);
 }
 
 .cta {
-  background: var(--navy) !important;
-  color: #fff !important;
+  background: var(--green) !important;
+  color: var(--navy) !important;
   padding: 7px 16px;
   border-radius: 4px;
   font-weight: 600 !important;
 }
 
 .cta:hover {
-  background: #243857 !important;
+  background: var(--green-mid) !important;
 }
 
 @media (max-width: 600px) {
